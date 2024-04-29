@@ -3,21 +3,37 @@
 <meta charset="UTF-8">
 <title>BruceMinangasWorld</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
+<style>
+  .navbar-brand {
+    font-weight: bold;
+    color: #4CAF50; /* Green color for a 'better world' theme */
+  }
+  .nav-link {
+    color: #5F9EA0; /* Calm blue color */
+  }
+  .nav-link:hover {
+    color: #2E8B57; /* Darker green for hover effect */
+  }
+  header {
+    background: #E0FFFF; /* Light cyan background for a fresh look */
+    padding: 10px 0; /* Add some padding */
+  }
+</style>
 
 <body>
 
   <header>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
       <a class="navbar-brand" href="#">BruceMinangasWorld</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="#about">Login</a>
           </li>
@@ -31,7 +47,7 @@
             <a class="nav-link" href="#education">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact">Concepts</a>
           </li>
         </ul>
       </div>
@@ -45,8 +61,8 @@
       <div class="row">
         <div class="col-md-6">
           <h1 class="mb-4">Join BruceMinangasWorld and <br> Improve Your Life Today</h1>
-          <p class="mb-4">Our mission is to help you live your best life by giving you the right tools/systems that will
-            help you reach your full potential. These tools will also help you to create your world which will increase your life fulfillment.</p>
+          <p class="mb-4">At BruceMinangasWorld, We provide you with the best tools & systems that
+            makes you a better person(Maturity). Maturity being a broad term, We believe that people who have mastered life systems will shape our world in the right way.</p>
           <a href="#" class="btn btn-primary btn-lg me-3 mb-3">Sign Up Now</a>
           <a href="#" class="btn btn-outline-primary btn-lg mb-3">Learn More</a>
         </div>
@@ -63,20 +79,13 @@
       <div class="row">
         <div class="col-md-4">
           <h3 class="text-primary mb-4 fw-bold text-uppercase">Our Mission</h3>
-          <p class="lead mb-5">At BruceMinangasWorld, our mission is to help members live better lives by providing
-            access to all necessary human needs, connecting them with role models who bring value to their lives, and
-            fostering a community that supports learning, growth, and good morals.
+          <p class="lead mb-5"> Make the world a better place 
 
-            We believe that everyone has the potential to be their best self, and with the right guidance and resources,
-            they can achieve anything they set their minds to.</p>
+          </p>
         </div>
         <div class="col-md-4">
           <h3 class="text-primary mb-4 fw-bold text-uppercase">Our Vision</h3>
-          <p class="lead mb-5">We aspire to be a model group that provides high-quality services and sets an example for
-            others to follow.
-
-            We want to create a world where people are empowered to pursue their dreams and achieve their goals, where
-            communities are strong and supportive, and where everyone has access to the resources they need to succeed.
+          <p class="lead mb-5">Model people who provide quality services
           </p>
         </div>
         <div class="col-md-4">
@@ -164,7 +173,7 @@
               <h5 class="card-title">Health And Awareness System</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non elit non leo
                 euismod fringilla.</p>
-              <a href="#" class="btn btn-primary">View Profile</a>
+              <a href="#" class="btn btn-primary">Explore System</a>
             </div>
           </div>
         </div>
@@ -176,7 +185,7 @@
               <h5 class="card-title">Relationship System</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non elit non leo
                 euismod fringilla.</p>
-              <a href="#" class="btn btn-primary">View Profile</a>
+              <a href="#" class="btn btn-primary">Explore System</a>
             </div>
           </div>
         </div>
@@ -218,8 +227,8 @@
       <div class="row">
         <div class="col-md-6">
           <h3>About BruceMinangasWorld</h3>
-          <p class="mb-3">BruceMinangasWorld is a social and educational platform that connects people with inspiring
-            role models from around the world.</p>
+          <p class="mb-3">BruceMinangasWorld is a system driven platform that provides people with best systems and tools
+            that makes people more mature in a variety of fields.</p>
           <ul class="list-inline">
             <li class="list-inline-item"><a href="#">Terms of Use</a></li>
             <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
@@ -243,7 +252,7 @@
   </footer>
 
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 </body>
 
