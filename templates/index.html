@@ -1,100 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<title>BruceMinangasWorld</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-<style>
-  .card {
-  border-radius: .7rem;
-}
-  .navbar-brand {
-    font-weight: bold;
-    color: #4CAF50;
-    /* Green color for a 'better world' theme */
-  }
-
-  .nav-link {
-    color: #5F9EA0;
-    /* Calm blue color */
-  }
-
-  .nav-link:hover {
-    color: #2E8B57;
-    /* Darker green for hover effect */
-  }
-
-  header {
-    background: #E0FFFF;
-    /* Light cyan background for a fresh look */
-    padding: 10px 0;
-    /* Add some padding */
-  }
-
-  /* guded steps */
-  .guide {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  .step {
-    display: none;
-  }
-
-  .step:first-child {
-    display: block;
-  }
-
-  button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-
-  button:hover {
-    background-color: #0056b3;
-  }
-</style>
-
-<body>
-
-  <header>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-      <a class="navbar-brand" href="#">BruceMinangasWorld</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#role-models">Tools & Systems</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#user-content">Sponsorship</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#education">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Concepts</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-
-
+{% extends 'base.html' %} {% load static %} {% block content %}
   <section class="hero d-flex align-items-center">
     <div class="container">
       <div class="row">
@@ -108,8 +12,8 @@
           <a href="maturitytest.html" class="btn btn-outline-primary btn-lg mb-3">Maturity Test</a>
         </div>
         <div class="col-md-6">
-          <iframe class="card-img-top rounded" width="560" height="315" src="https://www.youtube.com/embed/AptQHFJZ9go?autoplay=0"
-            frameborder="0"
+          <iframe class="card-img-top rounded" width="560" height="315"
+            src="https://www.youtube.com/embed/AptQHFJZ9go?autoplay=0" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
 
@@ -152,28 +56,31 @@
   </section>
 
   <!-- guide section -->
-  <div class="guide-description text-center">
-    <h2>Steps to use our systems</h2>
-    <p>This guide will walk you through a series of steps to achieve a specific goal.</p>
-  </div>
-  <section class="guide">
-    <div class="step" id="step1">
-      <h2>Step 1: First Action</h2>
-      <p>This is the first action you need to take.</p>
-      <button onclick="nextStep()">Next Step</button>
-    </div>
-    <div class="step" id="step2">
-      <h2>Step 2: Second Action</h2>
-      <p>This is the second action you need to take.</p>
-      <button onclick="nextStep()">Next Step</button>
-    </div>
-    <div class="step" id="step3">
-      <h2>Step 3: Final Action</h2>
-      <p>This is the final action you need to take.</p>
-      <button onclick="resetGuide()">Start Over</button>
+  <section id="mission-vision-values" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="mb-3">Unlocking the Full Potential of Our Tools</h2>
+          <p class="lead mb-5">Follow these steps to harness the true power of our tools and systems.</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-primary mb-4 fw-bold text-uppercase">Step 1</h3>
+          <p class="lead mb-5">Get acquainted with the tool. Dive in, explore, and make it your ally.</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-primary mb-4 fw-bold text-uppercase">Step 2</h3>
+          <p class="lead mb-5">When life throws challenges your way, turn to our tools. They might just be the solution
+            you've been seeking.</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-primary mb-4 fw-bold text-uppercase">Step 3</h3>
+          <p class="lead mb-5"> Make tool usage a
+            habit. The more you use it, the more seamlessly it integrates into your daily routine.</p>
+        </div>
+
+      </div>
     </div>
   </section>
-
 
   <!-- Our life-changing tools -->
   <section id="role-models" class="py-5" style="background-color: #F8E08E;">
@@ -188,38 +95,37 @@
       <div class="row">
         <!-- Career Transformation System -->
         <div class="col-md-4 mb-4">
-          <div class="card border-0 shadow">
-            <img src="career.png" class="card-img-top" style="height: 250px;" alt="Career Transformation">
+          <div class="card border-0 shadow" id="career-card"> <!-- Added id attribute -->
+            <img src="{% static 'images/career.png' %}" class="card-img-top" style="height: 250px;" alt="Career Transformation">
             <div class="card-body">
               <h5 class="card-title text-primary">Career Transformation System</h5>
               <p class="card-text">Experience a revolution in your professional life! Our groundbreaking system uncovers
                 hidden potential and propels you towards unparalleled success in your chosen field.</p>
-              <a href="#" class="btn btn-primary btn-lg">Transform Your Career</a>
             </div>
           </div>
         </div>
+        
+        
         <!-- Wellness Revolution System -->
         <div class="col-md-4 mb-4">
           <div class="card border-0 shadow">
-            <img src="health.png" class="card-img-top" style="height: 250px;" alt="Wellness Revolution">
+            <img src="{% static 'images/health.png' %}" class="card-img-top" style="height: 250px;" alt="Wellness Revolution">
             <div class="card-body">
               <h5 class="card-title text-success">Wellness Revolution System</h5>
               <p class="card-text">Embark on a journey of total well-being! Our revolutionary system empowers you to
                 reclaim control of your health, vitality, and happiness, paving the way for a life of boundless energy
                 and fulfillment.</p>
-              <a href="#" class="btn btn-success btn-lg">Start Your Revolution</a>
             </div>
           </div>
         </div>
         <!-- Relationship Renaissance System -->
         <div class="col-md-4 mb-4">
           <div class="card border-0 shadow">
-            <img src="relationship.png" class="card-img-top" style="height: 250px;" alt="Relationship Renaissance">
+            <img src="{% static 'images/relationship.png' %}" class="card-img-top" style="height: 250px;" alt="Relationship Renaissance">
             <div class="card-body">
               <h5 class="card-title text-danger">Relationship Renaissance System</h5>
               <p class="card-text">Transform your connections and enrich your life! Our visionary system unlocks the
                 secrets to profound, enduring relationships, fostering deep understanding, trust, and intimacy.</p>
-              <a href="#" class="btn btn-danger btn-lg">Ignite Your Relationships</a>
             </div>
           </div>
         </div>
@@ -497,71 +403,6 @@
     </div>
   </section>
 
+  {% endblock %}
 
-  <footer class="bg-dark text-light py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h3>About BruceMinangasWorld</h3>
-          <p class="mb-3">BruceMinangasWorld is a system driven platform that provides people with best systems and
-            tools
-            that makes people more mature to handle any type of problem.</p>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Terms of Use</a></li>
-            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <h3>Connect With Us</h3>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="#"><i class="bi bi-facebook"></i></a>LinkedIn</li>
-            <li class="list-inline-item"><a href="#"><i class="bi bi-twitter"></i></a>Twitter</li>
-            <li class="list-inline-item"><a href="#"><i class="bi bi-instagram"></i></a>Telegram</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-md-12 text-center">
-          <p>&copy; 2024 BruceMinangasWorld. All Rights Reserved.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-
-  <script>
-    let currentStep = 1;
-    const totalSteps = document.querySelectorAll('.step').length;
-
-    function nextStep() {
-      const currentStepElement = document.getElementById(`step${currentStep}`);
-      currentStepElement.style.display = 'none';
-
-      currentStep++;
-      if (currentStep > totalSteps) {
-        alert('Congratulations! You have completed the guide.');
-        resetGuide();
-        return;
-      }
-
-      const nextStepElement = document.getElementById(`step${currentStep}`);
-      nextStepElement.style.display = 'block';
-    }
-
-    function resetGuide() {
-      currentStep = 1;
-      document.querySelectorAll('.step').forEach(step => {
-        step.style.display = 'none';
-      });
-      document.getElementById('step1').style.display = 'block';
-    }
-
-  </script>
-
-</body>
-
-</html>
+  

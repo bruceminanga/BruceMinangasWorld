@@ -1,0 +1,35 @@
+.card {
+    border-radius: .7rem;
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+    color: #4CAF50;
+    /* Green color for a 'better world' theme */
+  }
+
+  .nav-link {
+    color: #5F9EA0;
+    /* Calm blue color */
+  }
+
+  .nav-link:hover {
+    color: #2E8B57;
+    /* Darker green for hover effect */
+  }
+
+  header {
+    background: #E0FFFF;
+    /* Light cyan background for a fresh look */
+    padding: 10px 0;
+    /* Add some padding */
+  }
+
+  /* guded steps */
+  #career-card {
+  transition: border-color 0.3s ease;
+}
+
+#career-card:hover {
+  border-color: #007bff; /* Change to your desired primary color */
+}
