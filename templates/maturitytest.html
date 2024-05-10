@@ -1,93 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Step-by-Step Guide</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
+      body {
+        font-family: Arial, sans-serif;
+      }
 
-        .guide {
-            max-width: 600px;
-            margin: 0 auto;
-        }
+      .guide {
+        max-width: 600px;
+        margin: 0 auto;
+      }
 
-        .step {
-            display: none;
-        }
+      .step {
+        display: none;
+      }
 
-        .step:first-child {
-            display: block;
-        }
+      .step:first-child {
+        display: block;
+      }
 
-        button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
 
-        button:hover {
-            background-color: #0056b3;
-        }
+      button:hover {
+        background-color: #0056b3;
+      }
     </style>
 
     <div class="guide">
-        <div class="step" id="step1">
-            <h2>Step 1: First Action</h2>
-            <p>This is the first action you need to take.</p>
-            <button onclick="nextStep()">Next Step</button>
-        </div>
-        <div class="step" id="step2">
-            <h2>Step 2: Second Action</h2>
-            <p>This is the second action you need to take.</p>
-            <button onclick="nextStep()">Next Step</button>
-        </div>
-        <div class="step" id="step3">
-            <h2>Step 3: Final Action</h2>
-            <p>This is the final action you need to take.</p>
-            <button onclick="resetGuide()">Start Over</button>
-        </div>
+      <div class="step" id="step1">
+        <h2>Step 1: First Action</h2>
+        <p>This is the first action you need to take.</p>
+        <button onclick="nextStep()">Next Step</button>
+      </div>
+      <div class="step" id="step2">
+        <h2>Step 2: Second Action</h2>
+        <p>This is the second action you need to take.</p>
+        <button onclick="nextStep()">Next Step</button>
+      </div>
+      <div class="step" id="step3">
+        <h2>Step 3: Final Action</h2>
+        <p>This is the final action you need to take.</p>
+        <button onclick="resetGuide()">Start Over</button>
+      </div>
     </div>
 
     <script src="script.js"></script>
     <script>
-        let currentStep = 1;
-        const totalSteps = document.querySelectorAll('.step').length;
+      let currentStep = 1;
+      const totalSteps = document.querySelectorAll(".step").length;
 
-        function nextStep() {
-            const currentStepElement = document.getElementById(`step${currentStep}`);
-            currentStepElement.style.display = 'none';
+      function nextStep() {
+        const currentStepElement = document.getElementById(
+          `step${currentStep}`
+        );
+        currentStepElement.style.display = "none";
 
-            currentStep++;
-            if (currentStep > totalSteps) {
-                alert('Congratulations! You have completed the guide.');
-                resetGuide();
-                return;
-            }
-
-            const nextStepElement = document.getElementById(`step${currentStep}`);
-            nextStepElement.style.display = 'block';
+        currentStep++;
+        if (currentStep > totalSteps) {
+          alert("Congratulations! You have completed the guide.");
+          resetGuide();
+          return;
         }
 
-        function resetGuide() {
-            currentStep = 1;
-            document.querySelectorAll('.step').forEach(step => {
-                step.style.display = 'none';
-            });
-            document.getElementById('step1').style.display = 'block';
-        }
+        const nextStepElement = document.getElementById(`step${currentStep}`);
+        nextStepElement.style.display = "block";
+      }
 
+      function resetGuide() {
+        currentStep = 1;
+        document.querySelectorAll(".step").forEach((step) => {
+          step.style.display = "none";
+        });
+        document.getElementById("step1").style.display = "block";
+      }
     </script>
-</body>
-
+  </body>
 </html>
